@@ -36,4 +36,4 @@ I created this repository to:
 - Found an issue or typo? Open an issue or suggest improvements.
 - Want to contribute? Share better examples, clearer explanations or additional learning notes.
 - Feel free to fork and improve this repo!
-- If you like this project, give it a ⭐
+- If you like this repository, give it a ⭐
