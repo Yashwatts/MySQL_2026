@@ -17,6 +17,7 @@ I created this repository to:
 - MySQL installation and setup on Windows
 - Essential database terminologies
 - MySQL data types: Numeric, String, Date & Time, and Binary
+- Database-level SQL commands (CREATE, SHOW, USE, SELECT DATABASE, DROP)
 - Writing and understanding basic SQL queries
 
 ## Repository Structure
@@ -26,6 +27,7 @@ I created this repository to:
 - `03_Install_MySQL.md` - MySQL installation guide for Windows
 - `04_Learn_Basic_Database_Terminologies.md` - Core database terms with examples
 - `05_MySQL_DataTypes_Mastery.md` - Deep dive into MySQL data types (Numeric, String, Date & Time, Binary) with examples
+- `06_SQL_Database_Commands.md` - Database-level SQL commands with syntax, tips, and examples
 
 ## Who is this for?
 
