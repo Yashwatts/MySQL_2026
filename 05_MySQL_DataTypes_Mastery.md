@@ -136,10 +136,10 @@ CREATE TABLE product_details(
 
 | Data Type  | Storage (Bytes) | Description                                                                 | Example               |
 |------------|------------------|-----------------------------------------------------------------------------|-----------------------|
-| DATE       | 3                | Date values from '1000-01-01' to '9999-12-31'.                            | '2026-01-01'          |
-| DATETIME   | 8                | Date and time values from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. | '2026-01-04 12:00:00' |
+| DATE       | 3                | Date values from '1000-01-01' to '9999-12-31'.  (YYYY-MM-DD)                          | '2026-01-01'          |
+| DATETIME   | 8                | Date and time values from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. (YYYY-MM-DD HH:MM:SS) | '2026-01-04 12:00:00' |
 | TIMESTAMP  | 4                | UTC-based timestamp from '1970-01-01 00:00:01' UTC to '2038-01-19 03:14:07' UTC. | '2026-01-04 12:00:00' |
-| TIME       | 3                | Time values from '-838:59:59' to '838:59:59'.                              | '12:34:56'            |
+| TIME       | 3                | Time values from '-838:59:59' to '838:59:59'. (HH:MM:SS)                              | '12:34:56'            |
 | YEAR       | 1                | Year values from '1901' to '2155'.                                          | '2026'                |
 
 > Note: UTC helps represent time in a standard format across regions. MySQL can then convert and show time according to timezone settings, which makes time conversion easier and more reliable.
@@ -154,5 +154,31 @@ CREATE TABLE EventSchedule (
     event_timestamp TIMESTAMP, -- To store the exact date and time in UTC (e.g., '2026-01-16 14:30:00')
     event_time TIME, -- To store the time of the event (e.g., '14:30:00')
     event_year YEAR -- To store the year of the event (e.g., '2026')
+);
+```
+
+## 4. Binary Data Types
+
+Used for data that does not have a character set, like images, PDFs, or encrypted keys.
+
+- BINARY (255 bytes) / VARBINARY (64 KB)
+    Similar to CHAR / VARCHAR, but for binary bytes. Used for small items like encryption keys or hashes.
+
+- BLOB (Binary Large Object): For files
+    - TINYBLOB: 255 bytes
+    - BLOB: 64 KB
+    - MEDIUMBLOB: 16 MB (good for standard photos / PDFs)
+    - LONGBLOB: 4 GB (good for videos)
+
+For Example:
+
+```sql
+CREATE TABLE user_files (
+        user_id INT AUTO_INCREMENT PRIMARY KEY, -- User ID (numeric)
+        security_key BINARY(32), -- Fixed-length binary data (e.g., SHA-256 hash)
+        session_token VARBINARY(64), -- Variable-length binary data (e.g., encoded session token)
+        profile_picture TINYBLOB, -- Small binary objects (e.g., profile pictures)
+        document MEDIUMBLOB, -- Medium-sized binary files (e.g., PDFs or Word files)
+        large_media LONGBLOB -- Large binary data (e.g., videos or high-resolution media)
 );
 ```
