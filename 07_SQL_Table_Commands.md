@@ -36,8 +36,8 @@ create table employees(
     employment_status enum('active', 'on leave', 'terminated') default 'active',
     created_at timestamp default CURRENT_TIMESTAMP,
     updated_at timestamp default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
-    // Can also write like this instead of using alter command for foreign key as a table constraint.
-    // foreign key (department_id) references departments(department_id)
+    -- Can also write like this instead of using alter command for foreign key as a table constraint.
+    -- foreign key (department_id) references departments(department_id)
 );
 
 create table departments (
@@ -111,25 +111,25 @@ Command Actions:
 Some Examples:
 
 ```sql
-// Add Column
+-- Add Column
 ALTER TABLE employees
 add column description text,
 add column emergency_contact varchar(100);
 
-// Modify Column
+-- Modify Column
 ALTER TABLE employees
 modify column description tinytext,
 modify column emergency_contact varchar(100) not null;
 
-// Rename Column
+-- Rename Column
 ALTER TABLE employees
 rename column emergency_contact to em_contact;
 
-// Drop Column
+-- Drop Column
 ALTER TABLE employees
 drop column emergency_contact;
 
-// Adding Constraint
+-- Adding Constraint
 ALTER TABLE employees
 add check (emergency_contact REGEXP '^[A-Za-z ]+: [0-9+-]+$' );
 ```
@@ -156,8 +156,8 @@ The DROP command deletes the entire table structure and all its data permanently
 Example:
 
 ```sql
-drop table departments; // will fail because it has dependencies
+drop table departments; -- will fail because it has dependencies
 drop table employees;
-drop table ok; // will give error because ok table doesn't exist.
-drop table if exists ok; // Now instead of giving error it will give warning.
+drop table ok; -- will give error because ok table doesn't exist.
+drop table if exists ok; -- Now instead of giving error it will give warning.
 ```
