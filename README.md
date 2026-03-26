@@ -20,6 +20,7 @@ I created this repository to:
 - Database-level SQL commands (CREATE, SHOW, USE, SELECT DATABASE, DROP)
 - Table-level SQL commands (CREATE TABLE, INSERT, ALTER, DROP)
 - SELECT queries with WHERE, ORDER BY, LIMIT, DISTINCT, aggregate functions, subqueries, and UNION
+- WHERE clause filtering with logical operators, NULL handling, LIKE patterns, ranges, lists, and subqueries
 - Writing and understanding basic SQL queries
 
 ## Repository Structure
@@ -32,6 +33,7 @@ I created this repository to:
 - `06_SQL_Database_Commands.md` - Database-level SQL commands with syntax, tips, and examples
 - `07_SQL_Table_Commands.md` - Table-level SQL commands with constraints, inserts, alterations, and drops
 - `08_SQL_SELECT.md` - SELECT queries with syntax, filtering, sorting, functions, and advanced techniques
+- `09_SQL_WHERE_Clause.md` - WHERE clause queries with filtering, operators, pattern matching, NULL checks, and subqueries
 
 ## Who is this for?
 
