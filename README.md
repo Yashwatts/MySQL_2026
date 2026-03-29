@@ -25,7 +25,8 @@ I created this repository to:
 - Comparison operators (=, !=, <>, <, >, <=, >=) with numeric, date, and string filtering
 - ORDER BY sorting with ASC/DESC, multi-column ordering, custom sorting, and performance tips
 - Writing and understanding basic SQL queries
- - LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
+- LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
+- Aliases for columns, tables, expressions, and subqueries to improve readability
 
 ## Repository Structure
 
@@ -41,7 +42,8 @@ I created this repository to:
 - `10_SQL_Logical_Operators.md` - Logical operators (AND, OR, NOT) for combining conditions with practical examples
 - `11_SQL_Comparison_Operators.md` - Comparison operators with practical examples across numbers, dates, and strings
 - `12_SQL_ORDER_BY.md` - ORDER BY clause with basic, multi-column, custom, and performance-focused sorting examples
- - `13_SQL_LIMIT_AND_OFFSET.md` - LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
+- `13_SQL_LIMIT_AND_OFFSET.md` - LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
+- `14_SQL_Alias.md` - Aliases for columns, tables, expressions, and subqueries to improve readability
 
 ## Who is this for?
 
