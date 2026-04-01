@@ -30,6 +30,7 @@ I created this repository to:
 - Using DISTINCT to eliminate duplicate rows and return unique values
 - SQL functions: string, numeric, date/time, aggregate, and more with practical examples
 - Advanced filtering with GROUP BY, HAVING, and conditional logic
+- Primary keys, composite keys, clustered indexes, pages, and buffer pool internals
 
 ## Repository Structure
 
@@ -50,6 +51,7 @@ I created this repository to:
 - `15_SQL_DISTINCT.md` - Using DISTINCT to eliminate duplicates and return unique values in result sets
 - `16_SQL_Functions.md` - Comprehensive guide to SQL functions: string, numeric, date/time, aggregate, and more with practical examples
 - `17_SQL_Filtering_GROUP_BY_AND_HAVING.md` - GROUP BY and HAVING clauses for grouping data, filtering groups, and advanced aggregation techniques
+- `18_SQL_Primary_Keys.md` - Primary key concepts, syntax, composite keys, clustered index internals, pages, and buffer pool overview
 
 ## Who is this for?
 
