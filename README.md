@@ -31,6 +31,7 @@ I created this repository to:
 - SQL functions: string, numeric, date/time, aggregate, and more with practical examples
 - Advanced filtering with GROUP BY, HAVING, and conditional logic
 - Primary keys, composite keys, clustered indexes, pages, and buffer pool internals
+- Foreign keys, referential integrity, relationship types, and junction tables
 
 ## Repository Structure
 
@@ -52,6 +53,7 @@ I created this repository to:
 - `16_SQL_Functions.md` - Comprehensive guide to SQL functions: string, numeric, date/time, aggregate, and more with practical examples
 - `17_SQL_Filtering_GROUP_BY_AND_HAVING.md` - GROUP BY and HAVING clauses for grouping data, filtering groups, and advanced aggregation techniques
 - `18_SQL_Primary_Keys.md` - Primary key concepts, syntax, composite keys, clustered index internals, pages, and buffer pool overview
+- `19_SQL_Foreign_Keys.md` - Foreign key concepts, relationship types, constraints, and practical implementation examples
 
 ## Who is this for?
 
