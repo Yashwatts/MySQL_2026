@@ -26,13 +26,10 @@ ON table1.column = table2.column;
 ```
 
 - Efficiency: Filtering AND withing the ON clause is often more efficient than using a WHERE clause because it filters data during the join process rather that after.
-
-
--- An INNER JOIN returns only the rows where there is a match in both tables based on the specified join condition.
--- If there's no match, the rows from both tables are excluded from the result set.
+- An INNER JOIN returns only the rows where there is a match in both tables based on the specified join condition.
+- If there's no match, the rows from both tables are excluded from the result set.
 
 ```sql
-
 -- Create database
 CREATE DATABASE db_inner_join;
 USE db_inner_join;
@@ -163,9 +160,8 @@ WHERE YEAR(CURDATE()) - b.publication_year > 70;
 
 
 - Note: INNER JOIN excludes rows with NULL values in the join columns. If you want to include rows with NULL values, you would need to use LEFT JOIN or RIGHT JOIN.
+- Find authors who have written more than one book using HAVING clause:
 
-
--- Find authors who have written more than one book using HAVING clause
 ```sql
 SELECT a.first_name, a.last_name, COUNT(b.book_id) AS book_count
 FROM authors a
@@ -183,11 +179,11 @@ HAVING COUNT(b.book_id) > 1;
 - Handling Nulls: If no match exists, the result will contain NULL for the missing side.
 
 - Pro Tip: Use the IFNULL() function to replace NULL results with a default value (like 0) for cleaner reporting.
+- It returns ALL records from the left table and only the matching records from the right table.
+- If no match exists in the right table, NULL values will be returned for the right table's columns.
 
--- It returns ALL records from the left table and only the matching records from the right table.
--- If no match exists in the right table, NULL values will be returned for the right table's columns.
+- Basic LEFT JOIN syntax:
 
--- Basic LEFT JOIN syntax
 ```sql
 SELECT columns
 FROM table1
@@ -195,8 +191,8 @@ LEFT JOIN table2
 ON table1.column = table2.column;
 ```
 
+- Create and set up database:
 
--- Create and set up database
 ```sql
 CREATE DATABASE left_join;
 USE left_join;
@@ -321,7 +317,8 @@ HAVING MAX(o.order_date) IS NULL OR MAX(o.order_date) < DATE_SUB(CURDATE(), INTE
 
 #### Right Join Examples
 
--- Create and use the Gokuldham Society database
+- Create and use the Gokuldham Society database:
+
 ```sql
 CREATE DATABASE gokuldham_society;
 USE gokuldham_society;
@@ -454,20 +451,16 @@ GROUP BY a.apartment_id;
 - UNION ALL: Combines result sets and keeps duplicates. It is faster because it skips the duplicate-check process.
 
 - Requirement: Both queries must have the same number of columns with compatible data types.
-
-
--- UNION allows us to combine result sets from multiple SELECT queries into a single result set
--- Key points:
--- - Combines rows from multiple queries into a single result set
--- - Appends rows vertically (stacks them on top of each other)
--- - Requires that all queries have the same number of columns
--- - Column data types must be compatible across all queries
--- - Eliminates duplicate rows by default (use UNION ALL to keep duplicates)
--- - Uses the column names from the first SELECT statement for the final result set
--- - Ignores column names from subsequent queries
-
--- Database Setup
--- ====================================================================
+- UNION allows us to combine result sets from multiple SELECT queries into a single result set.
+- Key points:
+    - Combines rows from multiple queries into a single result set.
+    - Appends rows vertically (stacks them on top of each other).
+    - Requires that all queries have the same number of columns.
+    - Column data types must be compatible across all queries.
+    - Eliminates duplicate rows by default (use UNION ALL to keep duplicates).
+    - Uses the column names from the first SELECT statement for the final result set.
+    - Ignores column names from subsequent queries.
+- Database Setup:
 ```sql
 CREATE DATABASE union_demo;
 USE union_demo;
@@ -615,22 +608,17 @@ HAVING COUNT(*) = 2;
 - MySQL does not have a native FULL JOIN command.
 
 - Workaround: Combine a LEFT JOIN and a RIGHT JOIN using the UNION operator to simulate a full outer join.
-
--- FULL JOIN
--- - It returns all matching rows from both tables where the join condition is met
--- - It also returns all non-matching rows from the left table (with NULL values for columns from the right table)
--- - It also returns all non-matching rows from the right table (with NULL values for columns from the left table)
--- - It combines the results of both LEFT JOIN and RIGHT JOIN, including all records from both tables and matching records from both sides where available.
-
--- Join Types Comparison:
--- - INNER JOIN (only returns matching rows between tables)
--- - LEFT JOIN (returns all rows from left table and matching from right)
--- - RIGHT JOIN (returns all rows from right table and matching from left)
--- - FULL JOIN (returns all rows from both tables)
-
-
--- Database Setup - Friends Theme
--- ====================================================================
+- FULL JOIN:
+    - It returns all matching rows from both tables where the join condition is met.
+    - It also returns all non-matching rows from the left table (with NULL values for columns from the right table).
+    - It also returns all non-matching rows from the right table (with NULL values for columns from the left table).
+    - It combines the results of both LEFT JOIN and RIGHT JOIN, including all records from both tables and matching records from both sides where available.
+- Join Types Comparison:
+    - INNER JOIN (only returns matching rows between tables)
+    - LEFT JOIN (returns all rows from left table and matching from right)
+    - RIGHT JOIN (returns all rows from right table and matching from left)
+    - FULL JOIN (returns all rows from both tables)
+- Database Setup - Friends Theme:
 ```sql
 CREATE DATABASE friends_db;
 USE friends_db;
@@ -795,7 +783,7 @@ WHERE c.character_id IS NULL;
 
 - Warning: Be carefull on large production tables! Joining two tables with 1,000 rows each results in 1,000,000 rows, which can tank performance.
 
--- Database Setup
+- Database Setup:
 ```sql
 CREATE DATABASE cross_join;
 USE cross_join;
@@ -860,7 +848,7 @@ WHERE p.product_name = 'T-shirt';
 
 - Logic Check: Used to find pairs, such as "Employees working in the same department" or "Employees earning more than their managers".
 
--- Create and use database
+- Create and use database:
 ```sql
 CREATE DATABASE self_join_tutorial;
 USE self_join_tutorial;
