@@ -159,7 +159,7 @@ WHERE YEAR(CURDATE()) - b.publication_year > 70;
 ```
 
 
-- Note: INNER JOIN excludes rows with NULL values in the join columns. If you want to include rows with NULL values, you would need to use LEFT JOIN or RIGHT JOIN.
+> **Note:** INNER JOIN excludes rows with NULL values in the join columns. If you want to include rows with NULL values, you would need to use LEFT JOIN or RIGHT JOIN.
 - Find authors who have written more than one book using HAVING clause:
 
 ```sql
@@ -241,7 +241,7 @@ LEFT JOIN orders o
 ON c.customer_id = o.customer_id;
 
 -- Example 2: Finding customers with no orders
--- Note the use of IS NULL in the WHERE clause
+-- NOTE: the use of IS NULL in the WHERE clause
 SELECT c.customer_id, c.customer_name
 FROM customers c
 LEFT JOIN orders o
@@ -365,7 +365,7 @@ INSERT INTO residents (resident_id, first_name, last_name, occupation, apartment
 (7, 'Madhavi', 'Bhide', 'Housewife', 4),
 (8, 'Dr', 'Hathi', 'Doctor', 5),
 (9, 'Komal', 'Hathi', 'Housewife', 5);
--- Note: We've left some apartments without residents
+-- NOTE: We've left some apartments without residents
 
 -- Basic SELECT query to view all residents
 SELECT * FROM residents;
