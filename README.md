@@ -35,6 +35,7 @@ I created this repository to:
 - Database normalization (1NF, 2NF, 3NF), anomalies, and practical trade-offs
 - SQL JOINs (INNER, LEFT, RIGHT, FULL workaround, CROSS, SELF) and UNION operations
 - Subqueries, correlated subqueries, EXISTS, NOT EXISTS, and subquery filtering patterns
+- UPDATE statement basics, safe update mode, timestamp tracking, and update controls
 
 ## Repository Structure
 
@@ -60,6 +61,7 @@ I created this repository to:
 - `20_Database_Normalization.md` - Normalization fundamentals, 1NF/2NF/3NF design, anomaly reduction, and denormalization trade-offs
 - `21_SQL_JOIN.md` - JOIN types, UNION/UNION ALL, full join workaround in MySQL, and performance tips
 - `22_MySQL_Subqueries.md` - Subquery fundamentals, correlated subqueries, EXISTS/NOT EXISTS, and advanced filtering examples
+- `23_MySQL_UPDATE.md` - UPDATE syntax, safe update mode, multi-column updates, timestamps, and update constraints
 
 ## Who is this for?
 
