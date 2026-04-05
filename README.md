@@ -37,6 +37,7 @@ I created this repository to:
 - Subqueries, correlated subqueries, EXISTS, NOT EXISTS, and subquery filtering patterns
 - UPDATE statement basics, safe update mode, timestamp tracking, and update controls
 - DELETE vs TRUNCATE, foreign key delete behaviors, and data removal best practices
+- REPLACE statement behavior (insert-or-overwrite), conflict handling, and bulk replace with SELECT
 
 ## Repository Structure
 
@@ -64,6 +65,7 @@ I created this repository to:
 - `22_MySQL_Subqueries.md` - Subquery fundamentals, correlated subqueries, EXISTS/NOT EXISTS, and advanced filtering examples
 - `23_MySQL_UPDATE.md` - UPDATE syntax, safe update mode, multi-column updates, timestamps, and update constraints
 - `24_Delete_Vs_Truncate.md` - DELETE and TRUNCATE behavior, foreign key handling, and practical data removal scenarios
+- `25_SQL_REPLACE.md` - REPLACE statement logic, conflict resolution, and bulk data replacement examples
 
 ## Who is this for?
 
