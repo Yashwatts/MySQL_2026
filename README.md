@@ -41,6 +41,7 @@ I created this repository to:
 - SQL indexing end-to-end: index types, B+ Tree internals, cardinality, covering indexes, invisible indexes, partial indexing patterns and index hints
 - SQL transactions and ACID properties: BEGIN/COMMIT/ROLLBACK, isolation levels, anomalies, read/write locks, deadlocks, gap/next-key locks, MVCC, undo/redo logs and transaction states
 - SQL views in depth: CREATE VIEW, updatable vs non-updatable behavior, security benefits, CHECK OPTION and view maintenance
+- Stored procedures and functions: CALL, CREATE PROCEDURE, CREATE FUNCTION, IN/OUT/INOUT parameters, use cases and examples
 
 ## Repository Structure
 
@@ -72,6 +73,7 @@ I created this repository to:
 - `26_Indexing_SQL.md` - primary/unique/composite/full-text indexes, clustered vs non-clustered, covering indexes, cardinality, partial indexing patterns, invisible indexes, index hints and performance benchmarking
 - `27_SQL_Transactions.md` - complete transactions guide: BEGIN/COMMIT/ROLLBACK, ACID, isolation levels, anomalies, read vs write locks, deadlocks, gap/next-key locks, undo vs redo logs, transaction states, savepoints and practical patterns
 - `28_SQL_Views.md` - complete views guide: what views are, CREATE VIEW, updatable vs non-updatable views, materialized view concept, MERGE vs TEMPTABLE, read-only views, CHECK OPTION, security benefits and practical examples
+- `29_SQL_Stored_Procedures.md` - stored procedures and user-defined functions: CALL, CREATE PROCEDURE, CREATE FUNCTION, IN/OUT/INOUT parameters, determinism, restrictions, cursors, dynamic SQL, use cases, error handling and practical examples
 
 ## Who is this for?
 
