@@ -1,4 +1,4 @@
-## SQL Triggers (Complete Guide)
+## SQL Triggers
 
 Triggers are special database objects that automatically execute when a specific event happens on a table. They are useful for enforcing rules, auditing changes and keeping related data in sync.
 
