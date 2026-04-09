@@ -39,6 +39,7 @@ I created this repository to:
 - DELETE vs TRUNCATE, foreign key delete behaviors, and data removal best practices
 - REPLACE statement behavior (insert-or-overwrite), conflict handling, and bulk replace with SELECT
 - SQL indexing end-to-end: index types, B+ Tree internals, cardinality, covering indexes, invisible indexes, partial indexing patterns and index hints
+- SQL transactions and ACID properties: BEGIN/COMMIT/ROLLBACK, isolation levels, anomalies, read/write locks, deadlocks, gap/next-key locks, MVCC, undo/redo logs and transaction states
 
 ## Repository Structure
 
@@ -68,6 +69,7 @@ I created this repository to:
 - `24_Delete_Vs_Truncate.md` - DELETE and TRUNCATE behavior, foreign key handling, and practical data removal scenarios
 - `25_SQL_REPLACE.md` - REPLACE statement logic, conflict resolution, and bulk data replacement examples
 - `26_Indexing_SQL.md` - primary/unique/composite/full-text indexes, clustered vs non-clustered, covering indexes, cardinality, partial indexing patterns, invisible indexes, index hints and performance benchmarking
+- `27_SQL_Transactions.md` - complete transactions guide: BEGIN/COMMIT/ROLLBACK, ACID, isolation levels, anomalies, read vs write locks, deadlocks, gap/next-key locks, undo vs redo logs, transaction states, savepoints and practical patterns
 
 ## Who is this for?
 
