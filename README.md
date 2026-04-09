@@ -46,6 +46,7 @@ I created this repository to:
 - SQL window functions for analytics: execution order, ROW_NUMBER, RANK, DENSE_RANK, NTILE, FIRST_VALUE, LAST_VALUE, percentiles, PARTITION BY, running totals and filtering patterns
 - SQL CTEs (Common Table Expressions): WITH clause, multi-step query design, recursive queries, hierarchy traversal and sequence generation
 - SQL constraints for data integrity: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY vs UNIQUE, foreign-key behavior, constraint naming, validation patterns and practical schema rules
+- Real-world database design: ER diagrams, schema design workflow, surrogate vs natural keys, soft vs hard delete, audit columns, denormalization, naming conventions, e-commerce and hospital examples, many-to-many relationships and design checklists
 
 ## Repository Structure
 
@@ -82,6 +83,7 @@ I created this repository to:
 - `31_SQL_Window_Functions.md` - complete window functions guide: execution order, ROW_NUMBER, RANK, DENSE_RANK, NTILE, FIRST_VALUE, LAST_VALUE, PERCENT_RANK, CUME_DIST, PARTITION BY, running totals, window-vs-subquery patterns and practical analytics examples
 - `32_SQL_CTE.md` - complete CTE guide: WITH clause, multiple CTEs, recursive queries, hierarchy traversal, date/number series, recursion safety and practical examples
 - `33_SQL_Constraints.md` - complete constraints guide: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY vs UNIQUE, foreign-key recap, ON UPDATE/ON DELETE behavior, naming conventions, ALTER usage and practical validation examples
+- `34_Database_Design.md` - complete real-world database design guide: ER diagrams, schema design workflow, surrogate vs natural keys, soft vs hard delete, audit columns, denormalization, naming conventions, e-commerce and hospital examples, many-to-many relationships, datatype selection, sharding/partitioning notes and real query examples
 
 ## Who is this for?
 
