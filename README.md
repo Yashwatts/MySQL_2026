@@ -42,6 +42,7 @@ I created this repository to:
 - SQL transactions and ACID properties: BEGIN/COMMIT/ROLLBACK, isolation levels, anomalies, read/write locks, deadlocks, gap/next-key locks, MVCC, undo/redo logs and transaction states
 - SQL views in depth: CREATE VIEW, updatable vs non-updatable behavior, security benefits, CHECK OPTION and view maintenance
 - Stored procedures and functions: CALL, CREATE PROCEDURE, CREATE FUNCTION, IN/OUT/INOUT parameters, use cases and examples
+- Triggers for automation and data integrity: BEFORE/AFTER, INSERT/UPDATE/DELETE, auditing, validation, inventory updates and real-world use cases
 
 ## Repository Structure
 
@@ -74,6 +75,7 @@ I created this repository to:
 - `27_SQL_Transactions.md` - complete transactions guide: BEGIN/COMMIT/ROLLBACK, ACID, isolation levels, anomalies, read vs write locks, deadlocks, gap/next-key locks, undo vs redo logs, transaction states, savepoints and practical patterns
 - `28_SQL_Views.md` - complete views guide: what views are, CREATE VIEW, updatable vs non-updatable views, materialized view concept, MERGE vs TEMPTABLE, read-only views, CHECK OPTION, security benefits and practical examples
 - `29_SQL_Stored_Procedures.md` - stored procedures and user-defined functions: CALL, CREATE PROCEDURE, CREATE FUNCTION, IN/OUT/INOUT parameters, determinism, restrictions, cursors, dynamic SQL, use cases, error handling and practical examples
+- `30_SQL_Triggers.md` - complete triggers guide: BEFORE/AFTER triggers, INSERT/UPDATE/DELETE triggers, OLD/NEW usage, auditing, validation, inventory updates and real-world use cases
 
 ## Who is this for?
 
